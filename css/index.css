@@ -30,6 +30,13 @@ body {
 
 /* body */
 /* header */
+header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
 header p {
   font-size: 14px;
   font-weight: 700;
@@ -44,6 +51,112 @@ header p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /* carousel */
+#carouselMovie .carousel-inner .carousel-item .carousel-caption {
+  text-align: left;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#carouselMovie
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  p:first-of-type {
+  color: #fbbd61;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  margin: 0;
+  animation-delay: 0.5s;
+}
+#carouselMovie .carousel-inner .carousel-item .carousel-caption p:last-of-type {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+}
+#carouselMovie .carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 3.25rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.movieCarousel__trailer {
+  animation-delay: 0.5s;
+}
+.movieCarousel__trailer > span {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 48px;
+  margin-right: 8px;
+}
+.movieCarousel__trailer button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  color: white;
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+.movieCarousel__trailer button::before {
+  content: "";
+  width: 110%;
+  height: 100%;
+  display: block;
+  background-color: #ec7532;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: skewX(30deg) translateX(-110%);
+  transition: all 0.5s;
+  z-index: 1;
+}
+.movieCarousel__trailer button:hover::before {
+  transform: skewX(30deg) translateX(-10px);
+  opacity: 1;
+}
+.movieCarousel__trailer button span {
+  position: relative;
+  z-index: 2;
+}
+/* fix nut tron chuyen slide */
+#carouselMovie .carousel-indicators {
+  justify-content: flex-start;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#carouselMovie .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  box-sizing: border-box;
+  background-clip: border-box;
+}
+#carouselMovie .carousel-indicators li.active {
+  background-color: white;
+}
+/* overlay */
+.movieCarousel__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, transparent);
+}
 /* newin */
 /* sometimes */
 /* comingsoon */
