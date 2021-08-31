@@ -36,7 +36,6 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-
   <body>
     <!-- header -->
     <header class="container">
@@ -348,7 +347,594 @@
       </div>
     </section>
     <!-- showtimes -->
-    <section class="showTimes"></section>
+    <section class="showTimes section">
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line active"
+              id="mon-tab"
+              data-toggle="tab"
+              href="#mon"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              ><span>MON</span></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line"
+              id="tue-tab"
+              data-toggle="tab"
+              href="#tue"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              ><span>TUE</span></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line"
+              id="today-tab"
+              data-toggle="tab"
+              href="#today"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              ><span>TODAY</span></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line"
+              id="thu-tab"
+              data-toggle="tab"
+              href="#thu"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              ><span>THU</span></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line"
+              id="fri-tab"
+              data-toggle="tab"
+              href="#fri"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              ><span>FRI</span></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line"
+              id="sat-tab"
+              data-toggle="tab"
+              href="#sat"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              ><span>SAT</span></a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link line"
+              id="sun-tab"
+              data-toggle="tab"
+              href="#sun"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              ><span>SUN</span></a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="mon"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-5.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Caption America: The First Avenger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-6.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>It's over</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-7.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tue"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-6.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Caption America: The First Avenger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="today"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-7.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="thu"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-7.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="fri"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-7.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="sat"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-7.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="sun"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-7.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-8.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-2.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img class="img-fluid" src="./img/movie-3.jpg" alt="1" />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-5 showTimes__row">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="./img/movie-1.jpg
+                "
+                  alt="1"
+                />
+              </div>
+              <div class="col-10">
+                <p>ACTION, ADVENTURE, FANTASY</p>
+                <h3>Skingston Plan</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, cupiditate aspernatur. Dignissimos accusamus quas
+                  neque illum quasi reprehenderit est iure?
+                </p>
+                <p>
+                  <a href="#"
+                    >FULL SYNOPSIS <i class="fa fa-angle-right"></i
+                  ></a>
+                </p>
+                <div class="row showTimes__runingTimes">
+                  <div class="col-9 d-flex align-items-center">
+                    <span><i class="fa fa-clock"></i> VIEWING TIMES</span>
+                    <div>
+                      <button class="btn" disabled>10:30</button>
+                      <button class="btn">12:30</button>
+                      <button class="btn">14:30</button>
+                      <button class="btn">16:30</button>
+                    </div>
+                  </div>
+                  <div class="col-3 text-right showTimes__Mins">
+                    <span>105 MINS</span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- coming soon -->
     <section class="comingSoon"></section>
     <!-- movie list -->
