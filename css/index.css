@@ -10,6 +10,10 @@ body {
   font-size: 16px;
   color: #717171;
 }
+::selection {
+  background: #ec7532;
+  color: white;
+}
 /* line style */
 .line::after {
   content: "";
@@ -46,6 +50,10 @@ body {
   display: block;
   margin-top: 20px;
 }
+.title--white {
+  color: white;
+  border-bottom: 1px solid #333;
+}
 /* body */
 /* header */
 header {
@@ -76,6 +84,7 @@ header p {
   width: 100%;
   transform: translate(-50%, -100%);
   transition: transform 0.5s;
+  z-index: 16;
 }
 
 /* carousel */
@@ -334,6 +343,92 @@ header p {
   font-weight: 700;
 }
 /* comingsoon */
+.comingSoon {
+  background: #101010 url("../img/slide-3.png");
+  background-size: cover;
+  color: white;
+}
+.comingSoon__title {
+  font-size: 14px;
+  color: #ec7532;
+  letter-spacing: 2px;
+}
+.comingSoon h3 {
+  font-weight: 300;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+.comingSoon__rating > i {
+  color: #fbbd61;
+}
+.comingSoon p {
+  margin: 1rem 0;
+}
+.comingSoon a {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #ec7532;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.comingSoon a:hover {
+  color: white;
+}
+.comingSoon__video {
+  position: relative;
+}
+.comingSoon__video i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid #ec7532;
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+}
+.comingSoon__video:hover i {
+  transform: translate(-50%, -50%) scale(0.9);
+}
 /* movielist */
+.movieList {
+  background-color: #101010;
+}
+.movieList__item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.movieList__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+.movieList__item:hover .movieList__overlay {
+  opacity: 0;
+}
 /* contact */
+.contact__content {
+  text-align: center;
+}
+.contact__content p:first-child {
+  font-size: 23px;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.contact__content a {
+  font-size: 46px;
+  text-decoration: none;
+  color: #fbbd61;
+}
 /* footer  */

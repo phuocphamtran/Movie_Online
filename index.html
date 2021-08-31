@@ -33,6 +33,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- venobox css -->
+    <link rel="stylesheet" href="./css/venobox.min.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -936,11 +938,99 @@
       </div>
     </section>
     <!-- coming soon -->
-    <section class="comingSoon"></section>
+    <section class="comingSoon section">
+      <div class="container">
+        <h2 class="title title--white">COMING SOON</h2>
+        <div class="row align-items-center">
+          <div class="col-6">
+            <p class="comingSoon__title">COMEDY, CRIME</p>
+            <h3>The Hangover Part III</h3>
+            <div class="comingSoon__rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+              <span>
+                <i class="fa fa-calendar-alt mx-3"></i>
+                30 Septemper 2020
+              </span>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate non provident eveniet enim iste cupiditate, architecto
+              voluptatum odio tenetur voluptatem.
+            </p>
+            <a href="#">MORE INFO <i class="fa fa-angle-right"></i></a>
+          </div>
+          <div class="col-6">
+            <a
+              class="venobox"
+              data-autoplay="true"
+              data-vbtype="video"
+              href="http://vimeo.com/xxx"
+            >
+              <div class="comingSoon__video">
+                <img
+                  class="img-fluid"
+                  src="./img/slide-3-video.png"
+                  alt="coming soon video"
+                />
+                <i class="fa fa-play"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- movie list -->
-    <section class="movieList"></section>
+    <section class="movieList">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-9.jpg" alt="001" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-8.jpg" alt="002" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-11.jpg" alt="003" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-13.jpg" alt="004" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-12.jpg" alt="005" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="movieList__item">
+              <img class="img-fluid" src="./img/movie-14.jpg" alt="006" />
+              <div class="movieList__overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- contact -->
-    <section class="contact"></section>
+    <section class="contact section">
+      <div class="contact__content">
+        <p>Need help? Contact our support team on</p>
+        <a href="tel:0909911911">0909 911 911</a>
+      </div>
+    </section>
     <!-- footer -->
     <footer></footer>
 
@@ -952,6 +1042,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- venobox js -->
+    <script src="./js/venobox.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".venobox").venobox();
+      });
+    </script>
     <!-- bootstrap 4.6 js -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -963,6 +1060,7 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
     <!-- js scroll headerFixed -->
     <script>
       window.onscroll = function () {
