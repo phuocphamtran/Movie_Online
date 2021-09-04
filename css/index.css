@@ -172,8 +172,8 @@ header p {
   transform: translateX(-50%);
   margin-right: 0;
   margin-left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #carouselMovie .carousel-indicators li {
   width: 10px;
@@ -187,6 +187,7 @@ header p {
 #carouselMovie .carousel-indicators li.active {
   background-color: white;
 }
+
 /* overlay */
 .movieCarousel__overlay {
   position: absolute;
@@ -204,6 +205,17 @@ header p {
 }
 #carouselMovie .carousel-item {
   height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+#carouselMovie .carousel-item:first-child{
+  background-image: url(../img/hero-1.jpg);
+}
+#carouselMovie .carousel-item:nth-child(2){
+  background-image: url(../img/hero-2.jpg);
+}
+#carouselMovie .carousel-item:nth-child(3){
+  background-image: url(../img/hero-3.jpg);
 }
 /* newin */
 .newIn__title {
@@ -509,5 +521,10 @@ footer a:hover {
   }
   #movieNavBar .navbar-nav .active .nav-link {
     color: #ec7532;
+  }
+  /* carousel */
+  #movieNavBar .carousel-item .carousel-caption h2{
+    font-size: 2.5rem;
+
   }
 }
